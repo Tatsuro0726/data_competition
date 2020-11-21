@@ -53,5 +53,6 @@ mkdir  "%1"\notebook
 mkdir  "%1"\notebook\eda
 mkdir  "%1"\notebook\preproccessing
 mkdir  "%1"\notebook\evaluation
+mkdir  "%1"\notebook\submit
 
 tree "%1"
