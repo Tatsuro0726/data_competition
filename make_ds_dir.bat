@@ -51,7 +51,7 @@ mkdir  "%1"\data\processed
 rem notebookディレクトリ作成
 mkdir  "%1"\notebook
 mkdir  "%1"\notebook\eda
-mkdir  "%1"\notebook\modeling
+mkdir  "%1"\notebook\preproccessing
 mkdir  "%1"\notebook\evaluation
 
 tree "%1"
