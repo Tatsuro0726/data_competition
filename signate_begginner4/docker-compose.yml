@@ -1,0 +1,18 @@
+version: "3"
+services:
+  notebook:
+    # 同ディレクトリのDockerfileをbuild
+    build: .
+    container_name: jupyterlab
+    ports:
+      - 8888:8888
+    # 環境変数
+    #environment:
+    #  - JUPYTER_ENABLE_LAB=yes
+    # ディレクトリの紐づけ
+    volumes:
+      - "./:/opt/app/data"
+    tty: true
+    stdin_open: true
+    # jupyterlabへの起動コマンド
+    command: jupyter-lab --no-browser --port=8888 --ip=0.0.0.0 --allow-root --NotebookApp.token=''
